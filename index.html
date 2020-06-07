@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <script type="text/javascript" src="js/app.js"></script> -->
+  </head>
+
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">yummy.eats</a>
+          <!-- <nav>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">services</a></li>
+            </ul>
+          </nav> -->
+        </header>
+        <h1><span>The Healthy</span> Eating Experience</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos
+          atque id quisquam reprehenderit rerum quae neque dolor aliquam
+          adipisci!
+        </p>
+
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter your city:</label>
+              <input type="text" name="city" id="city" />
+              <p>Example: "San Diego"</p>
+            </div>
+
+            <input type="button" value="Find Food Now" id="btn-food" />
+          </form>
+        </div>
+      </section>
+    </div>
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Authentic. Awesome.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+          error delectus? Voluptatum porro in mollitia aut, ea animi quasi
+          sapiente blanditiis eos illo. Laudantium rem sapiente, suscipit sequi
+          delectus distinctio.
+        </p>
+      </div>
+      <img src="images/img2.jpg" alt="Picture of food in the bowl" />
+    </section>
+
+    <script>
+      let btn = document.getElementById("btn-food");
+      let overlay = document.getElementById("overlay");
+
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        // btn.style.backgroundColor = "red";
+        overlay.classList.add("animate-overlay");
+        setTimeout(() => {
+          overlay.classList.remove("animate-overlay");
+          overlay.style.display = "none";
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
