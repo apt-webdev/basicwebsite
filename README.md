@@ -10,3 +10,6 @@ Explore de code and make some changes. Try to find:
   - flexbox features
   - @media queries (for responsive layout)
   - @keyframes rules (for animations)
+  
+# Let's see
+![](gif/webpage.gif)
